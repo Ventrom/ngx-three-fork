@@ -1,0 +1,34 @@
+import { Type } from '@angular/core';
+import { MeshNormalMaterial, MeshNormalMaterialParameters, NormalMapTypes, Texture, Vector2 } from 'three';
+import { ThMaterial } from './ThMaterial';
+import * as i0 from "@angular/core";
+export declare class ThMeshNormalMaterial<T extends MeshNormalMaterial = MeshNormalMaterial, TARGS = MeshNormalMaterialParameters> extends ThMaterial<T, TARGS> {
+    getType(): Type<MeshNormalMaterial>;
+    get isMeshNormalMaterial(): true | undefined;
+    set type(value: string);
+    get type(): string | undefined;
+    set bumpMap(value: Texture | null);
+    get bumpMap(): (Texture | null) | undefined;
+    set bumpScale(value: number);
+    get bumpScale(): number | undefined;
+    set normalMap(value: Texture | null);
+    get normalMap(): (Texture | null) | undefined;
+    set normalMapType(value: NormalMapTypes);
+    get normalMapType(): NormalMapTypes | undefined;
+    set normalScale(value: Vector2 | [x: number, y: number]);
+    get normalScale(): Vector2 | undefined;
+    set displacementMap(value: Texture | null);
+    get displacementMap(): (Texture | null) | undefined;
+    set displacementScale(value: number);
+    get displacementScale(): number | undefined;
+    set displacementBias(value: number);
+    get displacementBias(): number | undefined;
+    set wireframe(value: boolean);
+    get wireframe(): boolean | undefined;
+    set wireframeLinewidth(value: number);
+    get wireframeLinewidth(): number | undefined;
+    set flatShading(value: boolean);
+    get flatShading(): boolean | undefined;
+    static ɵfac: i0.ɵɵFactoryDeclaration<ThMeshNormalMaterial<any, any>, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<ThMeshNormalMaterial<any, any>, "th-meshNormalMaterial", never, { "type": { "alias": "type"; "required": false; }; "bumpMap": { "alias": "bumpMap"; "required": false; }; "bumpScale": { "alias": "bumpScale"; "required": false; }; "normalMap": { "alias": "normalMap"; "required": false; }; "normalMapType": { "alias": "normalMapType"; "required": false; }; "normalScale": { "alias": "normalScale"; "required": false; }; "displacementMap": { "alias": "displacementMap"; "required": false; }; "displacementScale": { "alias": "displacementScale"; "required": false; }; "displacementBias": { "alias": "displacementBias"; "required": false; }; "wireframe": { "alias": "wireframe"; "required": false; }; "wireframeLinewidth": { "alias": "wireframeLinewidth"; "required": false; }; "flatShading": { "alias": "flatShading"; "required": false; }; }, {}, never, ["*"], false, never>;
+}

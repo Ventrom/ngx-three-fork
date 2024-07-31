@@ -1,0 +1,31 @@
+import { InjectionToken, Injector, OnChanges, Provider, SimpleChanges, TemplateRef, ViewContainerRef } from '@angular/core';
+import { CSS3DParameters, CSS3DRenderer } from 'three/examples/jsm/renderers/CSS3DRenderer.js';
+import { CSS2DParameters, CSS2DRenderer } from 'three/examples/jsm/renderers/CSS2DRenderer.js';
+import { Renderer, WebGLRenderer, WebGLRendererParameters } from 'three';
+import * as i0 from "@angular/core";
+export type ThRendererParameters = Partial<WebGLRendererParameters>;
+export declare const RENDERER_PROVIDERS: InjectionToken<Renderer[]>;
+export declare const CSS3D_RENDERER: InjectionToken<CSS3DRenderer>;
+export declare const CSS2D_RENDERER: InjectionToken<CSS2DRenderer>;
+export declare const WEBGL_RENDERER: InjectionToken<WebGLRenderer>;
+export declare class RendererProviderDirective implements OnChanges {
+    private viewContainer;
+    private templateRef;
+    private parentInjector;
+    rendererParameters?: ThRendererParameters;
+    css3DParameters?: CSS3DParameters;
+    css2DParameters?: CSS2DParameters;
+    private view?;
+    private injector?;
+    constructor(viewContainer: ViewContainerRef, templateRef: TemplateRef<unknown>, parentInjector: Injector);
+    getInjectedRenderers(): Renderer[] | undefined;
+    ngOnChanges(_changes: SimpleChanges): void;
+    private createView;
+    private createInjector;
+    static ɵfac: i0.ɵɵFactoryDeclaration<RendererProviderDirective, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<RendererProviderDirective, "ng-template[rendererParameters], ng-template[css2dRendererParameters], ng-template[css3dRendererParameters], ng-template[webgpuRendererParameters]", never, { "rendererParameters": { "alias": "rendererParameters"; "required": false; }; "css3DParameters": { "alias": "css3DParameters"; "required": false; }; "css2DParameters": { "alias": "css2DParameters"; "required": false; }; }, {}, never, never, false, never>;
+}
+export declare function provideWebGLRenderer(parameters?: ThRendererParameters): Provider[];
+export declare function provideCSS3dRenderer(parameters?: CSS3DParameters): Provider[];
+export declare function provideCSS2dRenderer(parameters?: CSS2DParameters): Provider[];
+export declare function provideWebGPURenderer(parameters?: WebGLRendererParameters): Provider[];

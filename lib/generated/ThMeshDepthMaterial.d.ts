@@ -1,0 +1,30 @@
+import { Type } from '@angular/core';
+import { DepthPackingStrategies, MeshDepthMaterial, MeshDepthMaterialParameters, Texture } from 'three';
+import { ThMaterial } from './ThMaterial';
+import * as i0 from "@angular/core";
+export declare class ThMeshDepthMaterial<T extends MeshDepthMaterial = MeshDepthMaterial, TARGS = MeshDepthMaterialParameters> extends ThMaterial<T, TARGS> {
+    getType(): Type<MeshDepthMaterial>;
+    get isMeshDepthMaterial(): true | undefined;
+    set type(value: string);
+    get type(): string | undefined;
+    set map(value: Texture | null);
+    get map(): (Texture | null) | undefined;
+    set alphaMap(value: Texture | null);
+    get alphaMap(): (Texture | null) | undefined;
+    set depthPacking(value: DepthPackingStrategies);
+    get depthPacking(): DepthPackingStrategies | undefined;
+    set displacementMap(value: Texture | null);
+    get displacementMap(): (Texture | null) | undefined;
+    set displacementScale(value: number);
+    get displacementScale(): number | undefined;
+    set displacementBias(value: number);
+    get displacementBias(): number | undefined;
+    set wireframe(value: boolean);
+    get wireframe(): boolean | undefined;
+    set wireframeLinewidth(value: number);
+    get wireframeLinewidth(): number | undefined;
+    set fog(value: boolean);
+    get fog(): boolean | undefined;
+    static ɵfac: i0.ɵɵFactoryDeclaration<ThMeshDepthMaterial<any, any>, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<ThMeshDepthMaterial<any, any>, "th-meshDepthMaterial", never, { "type": { "alias": "type"; "required": false; }; "map": { "alias": "map"; "required": false; }; "alphaMap": { "alias": "alphaMap"; "required": false; }; "depthPacking": { "alias": "depthPacking"; "required": false; }; "displacementMap": { "alias": "displacementMap"; "required": false; }; "displacementScale": { "alias": "displacementScale"; "required": false; }; "displacementBias": { "alias": "displacementBias"; "required": false; }; "wireframe": { "alias": "wireframe"; "required": false; }; "wireframeLinewidth": { "alias": "wireframeLinewidth"; "required": false; }; "fog": { "alias": "fog"; "required": false; }; }, {}, never, ["*"], false, never>;
+}

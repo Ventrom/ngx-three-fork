@@ -1,0 +1,30 @@
+import { Type } from '@angular/core';
+import { Clock, WebGLRenderTarget, WebGLRenderer } from 'three';
+import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
+import { Pass } from 'three/examples/jsm/postprocessing/Pass.js';
+import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';
+import { ThWrapperBase } from '../ThWrapperBase';
+import * as i0 from "@angular/core";
+export declare class ThEffectComposerGen<T extends EffectComposer = EffectComposer, TARGS = [renderer: WebGLRenderer, renderTarget?: WebGLRenderTarget]> extends ThWrapperBase<T, TARGS> {
+    getType(): Type<EffectComposer>;
+    set renderer(value: WebGLRenderer);
+    get renderer(): WebGLRenderer | undefined;
+    set renderTarget1(value: WebGLRenderTarget);
+    get renderTarget1(): WebGLRenderTarget | undefined;
+    set renderTarget2(value: WebGLRenderTarget);
+    get renderTarget2(): WebGLRenderTarget | undefined;
+    set writeBuffer(value: WebGLRenderTarget);
+    get writeBuffer(): WebGLRenderTarget | undefined;
+    set readBuffer(value: WebGLRenderTarget);
+    get readBuffer(): WebGLRenderTarget | undefined;
+    set passes(value: Pass[]);
+    get passes(): Pass[] | undefined;
+    set copyPass(value: ShaderPass);
+    get copyPass(): ShaderPass | undefined;
+    set clock(value: Clock);
+    get clock(): Clock | undefined;
+    set renderToScreen(value: boolean);
+    get renderToScreen(): boolean | undefined;
+    static ɵfac: i0.ɵɵFactoryDeclaration<ThEffectComposerGen<any, any>, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<ThEffectComposerGen<any, any>, "th-effectComposerGen", never, { "renderer": { "alias": "renderer"; "required": false; }; "renderTarget1": { "alias": "renderTarget1"; "required": false; }; "renderTarget2": { "alias": "renderTarget2"; "required": false; }; "writeBuffer": { "alias": "writeBuffer"; "required": false; }; "readBuffer": { "alias": "readBuffer"; "required": false; }; "passes": { "alias": "passes"; "required": false; }; "copyPass": { "alias": "copyPass"; "required": false; }; "clock": { "alias": "clock"; "required": false; }; "renderToScreen": { "alias": "renderToScreen"; "required": false; }; }, {}, never, ["*"], false, never>;
+}

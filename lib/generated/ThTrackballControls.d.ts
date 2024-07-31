@@ -1,0 +1,74 @@
+import { Type } from '@angular/core';
+import { Camera, MOUSE, Vector3 } from 'three';
+import { TrackballControls } from 'three/examples/jsm/controls/TrackballControls.js';
+import { ThControlBase } from '../ThControlBase';
+import * as i0 from "@angular/core";
+export declare class ThTrackballControls<T extends TrackballControls = TrackballControls, TARGS = [object: Camera, domElement?: HTMLElement]> extends ThControlBase<T, TARGS> {
+    getType(): Type<TrackballControls>;
+    set object(value: Camera);
+    get object(): Camera | undefined;
+    set domElement(value: HTMLElement);
+    get domElement(): HTMLElement | undefined;
+    set enabled(value: boolean);
+    get enabled(): boolean | undefined;
+    set screen(value: {
+        left: number;
+        top: number;
+        width: number;
+        height: number;
+    });
+    get screen(): {
+        left: number;
+        top: number;
+        width: number;
+        height: number;
+    } | undefined;
+    set rotateSpeed(value: number);
+    get rotateSpeed(): number | undefined;
+    set zoomSpeed(value: number);
+    get zoomSpeed(): number | undefined;
+    set panSpeed(value: number);
+    get panSpeed(): number | undefined;
+    set noRotate(value: boolean);
+    get noRotate(): boolean | undefined;
+    set noZoom(value: boolean);
+    get noZoom(): boolean | undefined;
+    set noPan(value: boolean);
+    get noPan(): boolean | undefined;
+    set noRoll(value: boolean);
+    get noRoll(): boolean | undefined;
+    set staticMoving(value: boolean);
+    get staticMoving(): boolean | undefined;
+    set dynamicDampingFactor(value: number);
+    get dynamicDampingFactor(): number | undefined;
+    set minDistance(value: number);
+    get minDistance(): number | undefined;
+    set maxDistance(value: number);
+    get maxDistance(): number | undefined;
+    set minZoom(value: number);
+    get minZoom(): number | undefined;
+    set maxZoom(value: number);
+    get maxZoom(): number | undefined;
+    set keys(value: string[]);
+    get keys(): string[] | undefined;
+    set mouseButtons(value: {
+        LEFT?: MOUSE | null | undefined;
+        MIDDLE?: MOUSE | null | undefined;
+        RIGHT?: MOUSE | null | undefined;
+    });
+    get mouseButtons(): {
+        LEFT?: MOUSE | null | undefined;
+        MIDDLE?: MOUSE | null | undefined;
+        RIGHT?: MOUSE | null | undefined;
+    } | undefined;
+    set target(value: Vector3 | [x: number, y: number, z: number]);
+    get target(): Vector3 | undefined;
+    set position0(value: Vector3 | [x: number, y: number, z: number]);
+    get position0(): Vector3 | undefined;
+    set target0(value: Vector3 | [x: number, y: number, z: number]);
+    get target0(): Vector3 | undefined;
+    set up0(value: Vector3 | [x: number, y: number, z: number]);
+    get up0(): Vector3 | undefined;
+    static ɵfac: i0.ɵɵFactoryDeclaration<ThTrackballControls<any, any>, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<ThTrackballControls<any, any>, "th-trackballControls", never, { "object": { "alias": "object"; "required": false; }; "domElement": { "alias": "domElement"; "required": false; }; "enabled": { "alias": "enabled"; "required": false; }; "screen": { "alias": "screen"; "required": false; }; "rotateSpeed": { "alias": "rotateSpeed"; "required": false; }; "zoomSpeed": { "alias": "zoomSpeed"; "required": false; }; "panSpeed": { "alias": "panSpeed"; "required": false; }; "noRotate": { "alias": "noRotate"; "required": false; }; "noZoom": { "alias": "noZoom"; "required": false; }; "noPan": { "alias": "noPan"; "required": false; }; "noRoll": { "alias": "noRoll"; "required": false; }; "staticMoving": { "alias": "staticMoving"; "required": false; }; "dynamicDampingFactor": { "alias": "dynamicDampingFactor"; "required": false; }; "minDistance": { "alias": "minDistance"; "required": false; }; "maxDistance": { "alias": "maxDistance"; "required": false; }; "minZoom": { "alias": "minZoom"; "required": false; }; "maxZoom": { "alias": "maxZoom"; "required": false; }; "keys": { "alias": "keys"; "required": false; }; "mouseButtons": { "alias": "mouseButtons"; "required": false; }; "target": { "alias": "target"; "required": false; }; "position0": { "alias": "position0"; "required": false; }; "target0": { "alias": "target0"; "required": false; }; "up0": { "alias": "up0"; "required": false; }; }, {}, never, ["*"], false, never>;
+}

@@ -1,0 +1,32 @@
+import { Type } from '@angular/core';
+import { Camera, Object3D, Raycaster } from 'three';
+import { DragControls, DragControlsMode } from 'three/examples/jsm/controls/DragControls.js';
+import { ThControlBase } from '../ThControlBase';
+import * as i0 from "@angular/core";
+export declare class ThDragControls<T extends DragControls = DragControls, TARGS = [objects: Object3D[], camera: Camera, domElement?: HTMLElement]> extends ThControlBase<T, TARGS> {
+    getType(): Type<DragControls>;
+    set enabled(value: boolean);
+    get enabled(): boolean | undefined;
+    set recursive(value: boolean);
+    get recursive(): boolean | undefined;
+    set transformGroup(value: boolean);
+    get transformGroup(): boolean | undefined;
+    set mode(value: DragControlsMode);
+    get mode(): DragControlsMode | undefined;
+    set rotateSpeed(value: number);
+    get rotateSpeed(): number | undefined;
+    set activate(value: () => void);
+    get activate(): (() => void) | undefined;
+    set deactivate(value: () => void);
+    get deactivate(): (() => void) | undefined;
+    set dispose(value: () => void);
+    get dispose(): (() => void) | undefined;
+    set getObjects(value: () => Object3D[]);
+    get getObjects(): (() => Object3D[]) | undefined;
+    set getRaycaster(value: () => Raycaster);
+    get getRaycaster(): (() => Raycaster) | undefined;
+    set setObjects(value: (objects: readonly Object3D[]) => void);
+    get setObjects(): ((objects: readonly Object3D[]) => void) | undefined;
+    static ɵfac: i0.ɵɵFactoryDeclaration<ThDragControls<any, any>, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<ThDragControls<any, any>, "th-dragControls", never, { "enabled": { "alias": "enabled"; "required": false; }; "recursive": { "alias": "recursive"; "required": false; }; "transformGroup": { "alias": "transformGroup"; "required": false; }; "mode": { "alias": "mode"; "required": false; }; "rotateSpeed": { "alias": "rotateSpeed"; "required": false; }; "activate": { "alias": "activate"; "required": false; }; "deactivate": { "alias": "deactivate"; "required": false; }; "dispose": { "alias": "dispose"; "required": false; }; "getObjects": { "alias": "getObjects"; "required": false; }; "getRaycaster": { "alias": "getRaycaster"; "required": false; }; "setObjects": { "alias": "setObjects"; "required": false; }; }, {}, never, ["*"], false, never>;
+}

@@ -1,0 +1,33 @@
+import { Type } from '@angular/core';
+import { ShaderMaterial, Texture, WebGLRenderTarget } from 'three';
+import { FullScreenQuad } from 'three/examples/jsm/postprocessing/Pass.js';
+import { SMAAPass } from 'three/examples/jsm/postprocessing/SMAAPass.js';
+import { ThPass } from './ThPass';
+import * as i0 from "@angular/core";
+export declare class ThSMAAPass<T extends SMAAPass = SMAAPass, TARGS = [width: number, height: number]> extends ThPass<T, TARGS> {
+    getType(): Type<SMAAPass>;
+    set edgesRT(value: WebGLRenderTarget);
+    get edgesRT(): WebGLRenderTarget | undefined;
+    set weightsRT(value: WebGLRenderTarget);
+    get weightsRT(): WebGLRenderTarget | undefined;
+    set areaTexture(value: Texture);
+    get areaTexture(): Texture | undefined;
+    set searchTexture(value: Texture);
+    get searchTexture(): Texture | undefined;
+    set uniformsEdges(value: object);
+    get uniformsEdges(): object | undefined;
+    set materialEdges(value: ShaderMaterial);
+    get materialEdges(): ShaderMaterial | undefined;
+    set uniformsWeights(value: object);
+    get uniformsWeights(): object | undefined;
+    set materialWeights(value: ShaderMaterial);
+    get materialWeights(): ShaderMaterial | undefined;
+    set uniformsBlend(value: object);
+    get uniformsBlend(): object | undefined;
+    set materialBlend(value: ShaderMaterial);
+    get materialBlend(): ShaderMaterial | undefined;
+    set fsQuad(value: FullScreenQuad);
+    get fsQuad(): FullScreenQuad | undefined;
+    static ɵfac: i0.ɵɵFactoryDeclaration<ThSMAAPass<any, any>, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<ThSMAAPass<any, any>, "th-sMAAPass", never, { "edgesRT": { "alias": "edgesRT"; "required": false; }; "weightsRT": { "alias": "weightsRT"; "required": false; }; "areaTexture": { "alias": "areaTexture"; "required": false; }; "searchTexture": { "alias": "searchTexture"; "required": false; }; "uniformsEdges": { "alias": "uniformsEdges"; "required": false; }; "materialEdges": { "alias": "materialEdges"; "required": false; }; "uniformsWeights": { "alias": "uniformsWeights"; "required": false; }; "materialWeights": { "alias": "materialWeights"; "required": false; }; "uniformsBlend": { "alias": "uniformsBlend"; "required": false; }; "materialBlend": { "alias": "materialBlend"; "required": false; }; "fsQuad": { "alias": "fsQuad"; "required": false; }; }, {}, never, ["*"], false, never>;
+}

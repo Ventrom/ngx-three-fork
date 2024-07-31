@@ -1,0 +1,50 @@
+import { Type } from '@angular/core';
+import { Color, ColorRepresentation, Combine, Euler, EulerOrder, MeshBasicMaterial, MeshBasicMaterialParameters, Texture } from 'three';
+import { ThMaterial } from './ThMaterial';
+import * as i0 from "@angular/core";
+export declare class ThMeshBasicMaterial<T extends MeshBasicMaterial = MeshBasicMaterial, TARGS = MeshBasicMaterialParameters> extends ThMaterial<T, TARGS> {
+    getType(): Type<MeshBasicMaterial>;
+    get isMeshBasicMaterial(): true | undefined;
+    set type(value: string);
+    get type(): string | undefined;
+    set color(value: Color | [
+        ...args: [color: ColorRepresentation] | [r: number, g: number, b: number]
+    ]);
+    get color(): Color | undefined;
+    set map(value: Texture | null);
+    get map(): (Texture | null) | undefined;
+    set lightMap(value: Texture | null);
+    get lightMap(): (Texture | null) | undefined;
+    set lightMapIntensity(value: number);
+    get lightMapIntensity(): number | undefined;
+    set aoMap(value: Texture | null);
+    get aoMap(): (Texture | null) | undefined;
+    set aoMapIntensity(value: number);
+    get aoMapIntensity(): number | undefined;
+    set specularMap(value: Texture | null);
+    get specularMap(): (Texture | null) | undefined;
+    set alphaMap(value: Texture | null);
+    get alphaMap(): (Texture | null) | undefined;
+    set envMap(value: Texture | null);
+    get envMap(): (Texture | null) | undefined;
+    set envMapRotation(value: Euler | [x: number, y: number, z: number, order?: EulerOrder]);
+    get envMapRotation(): Euler | undefined;
+    set combine(value: Combine);
+    get combine(): Combine | undefined;
+    set reflectivity(value: number);
+    get reflectivity(): number | undefined;
+    set refractionRatio(value: number);
+    get refractionRatio(): number | undefined;
+    set wireframe(value: boolean);
+    get wireframe(): boolean | undefined;
+    set wireframeLinewidth(value: number);
+    get wireframeLinewidth(): number | undefined;
+    set wireframeLinecap(value: string);
+    get wireframeLinecap(): string | undefined;
+    set wireframeLinejoin(value: string);
+    get wireframeLinejoin(): string | undefined;
+    set fog(value: boolean);
+    get fog(): boolean | undefined;
+    static ɵfac: i0.ɵɵFactoryDeclaration<ThMeshBasicMaterial<any, any>, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<ThMeshBasicMaterial<any, any>, "th-meshBasicMaterial", never, { "type": { "alias": "type"; "required": false; }; "color": { "alias": "color"; "required": false; }; "map": { "alias": "map"; "required": false; }; "lightMap": { "alias": "lightMap"; "required": false; }; "lightMapIntensity": { "alias": "lightMapIntensity"; "required": false; }; "aoMap": { "alias": "aoMap"; "required": false; }; "aoMapIntensity": { "alias": "aoMapIntensity"; "required": false; }; "specularMap": { "alias": "specularMap"; "required": false; }; "alphaMap": { "alias": "alphaMap"; "required": false; }; "envMap": { "alias": "envMap"; "required": false; }; "envMapRotation": { "alias": "envMapRotation"; "required": false; }; "combine": { "alias": "combine"; "required": false; }; "reflectivity": { "alias": "reflectivity"; "required": false; }; "refractionRatio": { "alias": "refractionRatio"; "required": false; }; "wireframe": { "alias": "wireframe"; "required": false; }; "wireframeLinewidth": { "alias": "wireframeLinewidth"; "required": false; }; "wireframeLinecap": { "alias": "wireframeLinecap"; "required": false; }; "wireframeLinejoin": { "alias": "wireframeLinejoin"; "required": false; }; "fog": { "alias": "fog"; "required": false; }; }, {}, never, ["*"], false, never>;
+}
